@@ -1,0 +1,154 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'cinecaption';
+  src: url("../font/cinecaption227.TTF") format("truetype"); }
+html {
+  font-size: 20px;
+  color: #333333; }
+
+@media (min-width: 992px) {
+  .container {
+    width: 1030px; } }
+
+.title {
+  position: relative;
+  margin-top: 50px;
+  padding: 0; }
+  .title .title-logo {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100px;
+    height: 100px;
+    background-color: #cc0066;
+    border-radius: 0 0 0 100px;
+    z-index: 0; }
+    @media (max-width: 992px) {
+      .title .title-logo {
+        width: 50px;
+        height: 50px;
+        border-radius: 0 0 0 50px; } }
+  .title h1 {
+    font-family: 'cinecaption';
+    color: #ff9900;
+    font-weight: bold;
+    position: absolute;
+    font-size: 6rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    letter-spacing: -0.3rem; }
+    @media (max-width: 992px) {
+      .title h1 {
+        font-size: 2.2rem; } }
+  .title img {
+    margin-top: 200px;
+    padding: 0; }
+    @media (max-width: 992px) {
+      .title img {
+        margin-top: 100px; } }
+
+.menu {
+  margin: 30px 0; }
+  .menu .menu_btn {
+    font-family: 'cinecaption';
+    background-color: #ff9900;
+    color: #ffffff;
+    height: 150px;
+    width: 150px;
+    box-shadow: 5px 5px 5px 0px #999999;
+    display: table-cell;
+    letter-spacing: -0.15rem; }
+    @media (max-width: 768px) {
+      .menu .menu_btn {
+        height: 100px;
+        width: 100px;
+        font-size: 0.7rem; } }
+
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80px;
+  width: 100%;
+  font-size: 2rem;
+  color: #ff9900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Verdana, "ＭＳ Ｐゴシック", sans-serif;
+  text-shadow: 3px 1px 5px #666666;
+  margin: 15px 0; }
+  @media (max-width: 575px) {
+    .parallax-bg {
+      font-size: 1.5rem; } }
+
+.paratitle_1 {
+  background-image: url("../img/bg_1.jpg"); }
+
+.paratitle_2 {
+  background-image: url("../img/bg_2.jpg"); }
+
+.today {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Verdana, "ＭＳ Ｐゴシック", sans-serif; }
+  .today .today_title {
+    letter-spacing: -0.15rem;
+    background-color: #cc0066;
+    color: #ffffff; }
+    @media (max-width: 768px) {
+      .today .today_title {
+        font-size: 0.7rem; } }
+    @media (max-width: 575px) {
+      .today .today_title {
+        font-size: 1em;
+        margin-top: 15px; } }
+
+.text {
+  color: #333333;
+  margin-top: 15px; }
+  @media (max-width: 768px) {
+    .text {
+      font-size: 0.6rem; } }
+  @media (max-width: 575px) {
+    .text {
+      font-size: 0.8rem; } }
+
+.new_item {
+  overflow: hidden;
+  height: 450px;
+  width: 100%; }
+  .new_item .mask {
+    overflow-x: auto;
+    height: 500px;
+    width: 100%;
+    -webkit-overflow-scrolling: touch; }
+  .new_item .item {
+    display: table-cell; }
+  .new_item .item_sub {
+    width: 250px;
+    margin-left: 15px; }
+  .new_item .text {
+    font-size: 0.8rem; }
+  .new_item img {
+    position: relative; }
+  .new_item .store_name {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    background-color: rgba(204, 0, 102, 0.8);
+    color: #ffffff;
+    font-size: 0.65rem;
+    height: 30px;
+    width: 150px;
+    letter-spacing: -0.08rem; }
+
+.footer {
+  height: 80px;
+  background-color: #ff9900;
+  color: #ffffff;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Verdana, "ＭＳ Ｐゴシック", sans-serif;
+  font-size: 0.6rem;
+  padding-top: 30px; }
+
+/*# sourceMappingURL=style.css.map */
