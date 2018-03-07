@@ -66,6 +66,15 @@ html{
             margin-top:100px;
         }
     }
+    
+    .feel_title{
+        font-size:4rem;
+        text-align:left;
+        
+        @media(max-width:992px){
+            font-size:2rem;
+        }
+    }
 }
 
 .menu{
@@ -111,21 +120,6 @@ html{
     }
 }
 
-.parallax-bg::before {
-    content: "";
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    -webkit-transform: translate3d(0, 0, -1px);
-    transform: translate3d(0, 0, -1px);
-    width: 100%;
-    min-height: 100%;
-    -webkit-background-size: cover;
-    background-size: cover;
-    z-index: -1;
-  }
-  
 .paratitle_1{
     background-image: url('../img/bg_1.jpg');
 }
@@ -209,6 +203,24 @@ html{
     }
 }
 
+
+.sub_title{
+    background-color:$orange;
+    color:#ffffff;
+    font-family: 'cinecaption';
+    width:100%;
+    margin-bottom:30px;
+    padding-left:10px;
+}
+
+.sub_title_mask{
+    margin-top:150px;
+    
+    @media(max-width:992px){
+        margin-top:80px;
+    }
+}
+
 .footer{
     height:80px;
     background-color:$orange;
@@ -218,3 +230,4 @@ html{
     padding-top:30px;
     
 }
+
