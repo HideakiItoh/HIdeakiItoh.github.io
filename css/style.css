@@ -84,6 +84,20 @@ html {
     .parallax-bg {
       font-size: 1.5rem; } }
 
+.parallax-bg::before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate3d(0, 0, -1px);
+  transform: translate3d(0, 0, -1px);
+  width: 100%;
+  min-height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  z-index: -1; }
+
 .paratitle_1 {
   background-image: url("../img/bg_1.jpg"); }
 
