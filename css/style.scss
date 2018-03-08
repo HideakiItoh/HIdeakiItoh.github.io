@@ -96,13 +96,13 @@ html{
             height:100px;
             width:100px;
             padding-top:35px;
-            font-size:0.55rem;
+            font-size:0.65rem;
         }
         
         @media(max-width:576px){
-            height:70px;
-            width:70px;
-            font-size:0.5rem;
+            height:80px;
+            width:80px;
+            font-size:0.6rem;
             padding:0;
             padding-top:20px;
         }
@@ -227,7 +227,7 @@ html{
     font-size:0.9rem;
     
     @media(max-width:756px){
-        font-size:0.6rem;
+        font-size:0.7rem;
     }
 }
 
@@ -269,6 +269,35 @@ html{
     .img_2{
         @media(max-width:576px){
             display:none;
+        }
+    }
+    
+    .main{
+        position:relative;
+    }
+    
+    .main_name{
+        position:absolute;
+        bottom:20%;
+        left:30%;
+        background-color:rgba(204,0,102,0.8);
+        color:#ffffff;
+        font-size:0.8rem;
+        height:60px;
+        width:200px;
+        padding:5px;
+        letter-spacing:-0.08rem;
+        
+        @media(max-width:992px){
+            left:25%;
+            font-size:0.65rem;
+            height:45px;
+            width:150px;
+        }
+        
+        @media(max-width:576px){
+            left:60%;
+            width:130px;
         }
     }
 }
