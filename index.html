@@ -18,32 +18,32 @@
         </div>
       </div>  
       <div class="row">
-        <div class="menu text-center col-xs-6 col-sm-3">
-          <a href="feel.html" class="btn menu_btn rounded-circle p-0" role="button">
+        <div class="menu text-center col-xs-3">
+          <a href="feel.html" class="btn menu_btn rounded-circle" role="button">
             やるせなかった<br>午前中
           </a>
         </div>
-        <div class="menu col-xs-6 col-sm-3">
-          <a href="#" class="btn menu_btn rounded-circle p-0" role="button">
-            ランチまで<br>待てない<br>はやる気持ち
+        <div class="menu text-center col-xs-3">
+          <a href="#" class="btn menu_btn rounded-circle" role="button">
+            我慢できないい<br>はやる気持ち
           </a>
         </div>
-        <div class="menu col-xs-6 col-sm-3">
-          <a href="#" class="btn menu_btn rounded-circle p-0" role="button">
-            優しさに<br>つつまれる<br>午後
+        <div class="menu text-center col-xs-3">
+          <a href="#" class="btn menu_btn rounded-circle" role="button">
+            優しさに<br>つつまれる午後
           </a>
         </div>
-        <div class="menu col-xs-6 col-sm-3">
-          <a href="#" class="btn menu_btn rounded-circle p-0" role="button">
+        <div class="menu text-center col-xs-3">
+          <a href="#" class="btn menu_btn rounded-circle" role="button">
             そばに居る<br>ということ
           </a>
         </div>
       </div>
     </div>
-    <div class="parallax-bg paratitle_1">本日の一品</div>
     <div class="container">
       <div class="row">
-          <a href="detail.html"><div class="col-xs-12 col-sm-6"><img class="col-xs-12 img-responsive" src="img/NoImage.png"></div>
+        <div class="col-xs-12 parallax-bg paratitle_1">本日の一品</div>
+          <div class="col-xs-12 col-sm-6"><img class="col-xs-12 img-responsive" src="img/NoImage.png"></div>
           <div class="col-xs-12 col-sm-6 today">
             <div class="col-xs-12 today_title">欧州カレー　ボンディ（神保町）</div>
             <div class="col-xs-12 text">
@@ -54,12 +54,12 @@
             <div class="col-xs-12 text text-right">
               (¥1,480)
             </div>
-          </div></a>
+          </div>
       </div>
     </div>
-    <div class="parallax-bg paratitle_2">胸を打つ新たな一品</div>
     <div class="container">
       <div class="row">
+        <div class="col-xs-12 parallax-bg paratitle_2">胸を打つ新たな一品</div>
         <div class="col-xs-12 new_item">
           <div class="mask">
             <div class="item">
@@ -110,9 +110,31 @@
         </div>
       </div>
     </div>
-    <div class="footer text-center">©Tokyo Lunch Curry Comitee, All Rights Reserved</div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <p id="page-top"><a href="#wrap">PAGE TOP</a></p>
+    <div class="footer text-center">©東京ランチカレー委員会, All Rights Reserved</div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+      $(function() {
+        var topBtn = $('#page-top');    
+        topBtn.hide();
+
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 1) {
+            topBtn.fadeIn();
+          } else {
+            topBtn.fadeOut();
+          }
+        });
+
+        topBtn.click(function () {
+          $('body,html').animate({
+              scrollTop: 0
+          }, 1);
+          return false;
+        });
+      });
+    </script>
   </body>
 </html>

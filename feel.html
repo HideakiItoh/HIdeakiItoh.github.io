@@ -114,31 +114,47 @@
           </div>
           </div>
         
-        <div class="menu text-center col-xs-6 col-sm-3">
-          <a href="#" class="btn menu_btn rounded-circle p-0" role="button">
+        <div class="menu text-center col-xs-3">
+          <a href="feel.html" class="btn menu_btn rounded-circle" role="button">
             やるせなかった<br>午前中
           </a>
         </div>
-        <div class="menu col-xs-6 col-sm-3">
-          <a href="#" class="btn menu_btn rounded-circle p-0" role="button">
-            ランチまで<br>待てない<br>はやる気持ち
+        <div class="menu text-center col-xs-3">
+          <a href="#" class="btn menu_btn rounded-circle" role="button">
+            我慢できないい<br>はやる気持ち
           </a>
         </div>
-        <div class="menu col-xs-6 col-sm-3">
-          <a href="#" class="btn menu_btn rounded-circle p-0" role="button">
-            優しさに<br>つつまれる<br>午後
+        <div class="menu text-center col-xs-3">
+          <a href="#" class="btn menu_btn rounded-circle" role="button">
+            優しさに<br>つつまれる午後
           </a>
         </div>
-        <div class="menu col-xs-6 col-sm-3">
-          <a href="#" class="btn menu_btn rounded-circle p-0" role="button">
+        <div class="menu text-center col-xs-3">
+          <a href="#" class="btn menu_btn rounded-circle" role="button">
             そばに居る<br>ということ
           </a>
         </div>
       </div>
     </div>
-    <div class="footer text-center">©Tokyo Lunch Curry Comitee, All Rights Reserved</div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <p id="page-top"><a href="index.html">homeへ</a></p>
+    <div class="footer text-center">©東京ランチカレー委員会, All Rights Reserved</div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+      $(function() {
+        var topBtn = $('#page-top');    
+        topBtn.hide();
+
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 1) {
+            topBtn.fadeIn();
+          } else {
+            topBtn.fadeOut();
+          }
+        });
+
+      });
+    </script>
   </body>
 </html>
