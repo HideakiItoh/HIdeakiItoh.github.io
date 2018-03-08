@@ -48,9 +48,9 @@ html {
       .title img {
         margin-top: 100px; } }
   .title .feel_title {
-    font-size: 4rem;
+    font-size: 3.5rem;
     text-align: left; }
-    @media (max-width: 992px) {
+    @media (max-width: 756px) {
       .title .feel_title {
         font-size: 1.5rem;
         padding-left: 10px; } }
@@ -77,7 +77,7 @@ html {
       .menu .menu_btn {
         height: 70px;
         width: 70px;
-        font-size: 0.4rem;
+        font-size: 0.5rem;
         padding: 0;
         padding-top: 20px; } }
 
@@ -167,16 +167,28 @@ html {
   font-family: 'cinecaption';
   width: 100%;
   margin-bottom: 30px;
-  padding-left: 10px; }
+  padding-left: 10px;
+  font-size: 0.9rem; }
+  @media (max-width: 756px) {
+    .sub_title {
+      font-size: 0.6rem; } }
 
 .sub_title_mask {
-  margin-top: 95px;
-  font-family: 'cinecaption';
-  font-size: 0.9rem; }
-  @media (max-width: 992px) {
+  margin-top: 130px; }
+  @media (max-width: 756px) {
     .sub_title_mask {
-      margin-top: 50px;
-      font-size: 0.6rem; } }
+      margin-top: 60px; } }
+
+.detail_title_mask {
+  margin-top: 100px; }
+  @media (max-width: 756px) {
+    .detail_title_mask {
+      margin-top: 50px; } }
+  .detail_title_mask .detail_info {
+    font-size: 0.7rem; }
+    @media (max-width: 756px) {
+      .detail_title_mask .detail_info {
+        font-size: 0.5rem; } }
 
 .detail_img {
   margin: 15px 0; }

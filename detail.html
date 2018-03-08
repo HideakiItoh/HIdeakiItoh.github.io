@@ -17,10 +17,10 @@
         </div>
       </div>
     </div>
-    <div class="container sub_title_mask">
+    <div class="container detail_title_mask">
       <div class="row">
-        <div class="col-xs-3 col-sm-7"></div><div class="col-xs-9 col-sm-5">定休日/年末年始</div>
-        <div class="col-xs-3 col-sm-7"></div><div class="col-xs-9 col-sm-5">営業時間/11:00～22:30（L.O 22:00）</div>
+        <div class="col-xs-5 col-sm-6"></div><div class="col-xs-7 col-sm-6 detail_info">定休日/年末年始</div>
+        <div class="col-xs-5 col-sm-6"></div><div class="col-xs-7 col-sm-6 detail_info">営業時間/11:00～22:30（L.O 22:00）</div>
         <div class="col-xs-12 detail_img">
           <img class="col-sm-6 img-responsive" src="img/NoImage.png" alt="カードの画像">
           <img class="col-sm-6 img-responsive img_2" src="img/NoImage.png" alt="カードの画像">
@@ -67,7 +67,7 @@
         topBtn.hide();
 
         $(window).scroll(function () {
-          if ($(this).scrollTop() > 1) {
+          if ($(this).scrollTop() > 500) {
             topBtn.fadeIn();
           } else {
             topBtn.fadeOut();
