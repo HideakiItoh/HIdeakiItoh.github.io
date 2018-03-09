@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap-flex.min.css" rel="stylesheet" >
     <link rel="stylesheet" href="css/style.css">
+    
   </head>
   <body>
     <div class="container">
@@ -19,7 +20,7 @@
       </div>  
       <div class="row">
         <div class="menu text-center col-xs-3">
-          <a href="feel.html" class="btn menu_btn rounded-circle" role="button">
+          <a href="yarusenai.html" class="btn menu_btn rounded-circle" role="button">
             やるせなかった<br>午前中
           </a>
         </div>
@@ -42,70 +43,15 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 parallax-bg paratitle_1">本日の一品</div>
-          <div class="col-xs-12 col-sm-6"><a href="detail.html"><img class="col-xs-12 img-responsive" src="img/NoImage.png"></a></div>
-          <div class="col-xs-12 col-sm-6 today">
-            <div class="col-xs-12 today_title">欧州カレー　ボンディ（神保町）</div>
-            <div class="col-xs-12 text">
-              一度味わったら忘れられないと評判を呼ぶボンディのカレーです。<br><br>
-              「ビーフカレー」<br> 
-              リンゴを主体とし、炒め玉ねぎなどで甘みを出したカレーはまろやかで奥深いコクがある。何度食べても飽きないのはソースの旨味と絶妙なスパイス使いのなせる技。
-            </div>
-            <div class="col-xs-12 text text-right">
-              (¥1,480)
-            </div>
-          </div>
+        <div id="today_products" class="col-xs-12 parallax-bg paratitle_1">本日の一品</div>
+         
       </div>
     </div>
     <div class="container">
       <div class="row">
         <div class="col-xs-12 parallax-bg paratitle_2">胸を打つ新たな一品</div>
         <div class="col-xs-12 new_item">
-          <div class="mask">
-            <div class="item">
-              <div class="card item_sub">
-                <div class="card-body">
-                  <img class="card-img-top" src="img/NoImage.png" alt="カードの画像">
-                  <div class="store_name">ロッジ赤石（浅草）</div>
-                  <div class="text">「カツカレー」</div>
-                  <div class="text"> カツ重とともに 変わらぬ人気を誇る。 揚げたてのカツに 欧風のルーが絡む。</div>
-                  <div class="text text-right">（¥1,150）</div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="card item_sub">
-                <div class="card-body">
-                  <img class="card-img-top" src="img/NoImage.png" alt="カードの画像">
-                  <div class="store_name">ロッジ赤石（浅草）</div>
-                  <div class="text">「カツカレー」</div>
-                  <div class="text"> カツ重とともに 変わらぬ人気を誇る。 揚げたてのカツに 欧風のルーが絡む。</div>
-                  <div class="text text-right">（¥1,150）</div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="card item_sub">
-                <div class="card-body">
-                  <img class="card-img-top" src="img/NoImage.png" alt="カードの画像">
-                  <div class="store_name">ロッジ赤石（浅草）</div>
-                  <div class="text">「カツカレー」</div>
-                  <div class="text"> カツ重とともに 変わらぬ人気を誇る。 揚げたてのカツに 欧風のルーが絡む。</div>
-                  <div class="text text-right">（¥1,150）</div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="card item_sub">
-                <div class="card-body">
-                  <img class="card-img-top" src="img/NoImage.png" alt="カードの画像">
-                  <div class="store_name">ロッジ赤石（浅草）</div>
-                  <div class="text">「カツカレー」</div>
-                  <div class="text"> カツ重とともに 変わらぬ人気を誇る。 揚げたてのカツに 欧風のルーが絡む。</div>
-                  <div class="text text-right">（¥1,150）</div>
-                </div>
-              </div>
-            </div>
+          <div id="new_item_card" class="mask">
           </div>
         </div>
       </div>
@@ -115,6 +61,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
     <script>
       $(function() {
         var topBtn = $('#page-top');    
