@@ -13,7 +13,7 @@ $(function(){
         
         var html = '';
         html += '<div class="col-xs-12 col-sm-6">';
-        html += '<a href="detail.html?id=' + data[0].details + '"><img class="col-xs-12 img-responsive" src="img/' + storeImage + '" alt="商品の画像"></a></div>';
+        html += '<a href="detail.html?id=' + data[0].id + '"><img class="col-xs-12 img-responsive" src="img/' + storeImage + '" alt="商品の画像"></a></div>';
         html += '<div class="col-xs-12 col-sm-6 today"><div class="col-xs-12 today_title">' + data[0].store + '</div>';
         html += '<div class="col-xs-12 text">' + data[0].product + '</br>';
         html += data[0].details + '</div>';
