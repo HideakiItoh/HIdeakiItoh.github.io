@@ -39,7 +39,7 @@ $(function(){
         
             var html = '';
             html += '<div class="item"><div class="card item_sub"><div class="card-body">';
-            html += '<a href="detail.html?id=' + data[0].details + '"><img class="card-img-top" src="img/' + storeImage + '" alt="商品の画像"></a>';
+            html += '<a href="detail.html?id=' + data[0].id + '"><img class="card-img-top" src="img/' + storeImage + '" alt="商品の画像"></a>';
             html += '<div class="store_name">' + data[0].store + '</div>';
             html += '<div class="text">' + data[0].product + '</div>';
             html += '<div class="text">' + data[0].details + '</div>';
