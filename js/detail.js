@@ -26,8 +26,8 @@ $(function(){
         html += '<div class="col-xs-5 col-sm-6"></div><div class="col-xs-7 col-sm-6 detail_info">定休日/' + data[0].holiday + '</div>';
         html += '<div class="col-xs-5 col-sm-6"></div><div class="col-xs-7 col-sm-6 detail_info">営業時間/' + data[0].hours + data[0].last +'</div>';
         html += '<div class="col-xs-12 detail_img"><img class="col-sm-6 img-responsive main" src="img/' + storeImage + '" alt="商品の画像">';
-        html += '<div class="main_name"><p>' + data[0].product + '<br>　　　　　　　';
-        html += data[0].price + '</p></div>';
+        html += '<div class="main_name"><p>' + data[0].product + '</p>';
+        html += '<p class="text-right">' + data[0].price + '</p></div>';
         html += '<img class="col-sm-6 img-responsive img_2" src="img/' + storeImage2 + '" alt="商品の画像2"></div> ';
         html += '<div class="col-xs-12 text">' + data[0].product + '<br>';
         html += data[0].details + '</div>';

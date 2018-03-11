@@ -14,6 +14,9 @@ html {
   position: relative;
   margin-top: 50px;
   padding: 0; }
+  @media (max-width: 992px) {
+    .title {
+      margin-top: 20px; } }
   .title .title-logo {
     position: absolute;
     top: 0px;
@@ -40,6 +43,9 @@ html {
     letter-spacing: -0.3rem; }
     @media (max-width: 992px) {
       .title h1 {
+        font-size: 3rem; } }
+    @media (max-width: 756px) {
+      .title h1 {
         font-size: 2.2rem; } }
   .title img {
     margin-top: 200px;
@@ -47,6 +53,9 @@ html {
     @media (max-width: 992px) {
       .title img {
         margin-top: 100px; } }
+    @media (max-width: 756px) {
+      .title img {
+        margin-top: 80px; } }
   .title .feel_title {
     font-size: 3.5rem;
     text-align: left; }
@@ -88,14 +97,15 @@ html {
   background-repeat: no-repeat;
   height: 65px;
   width: 100%;
-  font-size: 2rem;
-  color: #ff9900;
+  font-size: 1.5rem;
+  color: #cc0066;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Verdana, "ＭＳ Ｐゴシック", sans-serif;
-  text-shadow: 3px 1px 5px #666666;
-  margin: 15px 0; }
+  text-shadow: 2px 0 5px #fff ,-2px 0 5px #fff ,0 -2px 5px #fff ,0 2px 5px #fff;
+  margin: 15px 0;
+  font-weight: bold; }
   @media (max-width: 575px) {
     .parallax-bg {
       font-size: 1.5rem;
@@ -140,9 +150,8 @@ html {
     overflow-x: auto;
     height: 500px;
     width: 100%;
+    display: flex;
     -webkit-overflow-scrolling: touch; }
-  .new_item .item {
-    display: table-cell; }
   .new_item .item_sub {
     width: 250px;
     margin-left: 15px; }
@@ -224,6 +233,9 @@ html {
       .detail_img .main_name {
         left: 60%;
         width: 130px; } }
+    .detail_img .main_name p {
+      margin: 0;
+      padding: 0; }
 
 .ggmap {
   width: 100%;
